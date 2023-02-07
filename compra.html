@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+<!--link bootstrap-->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+<!--link css-->
+    <link rel="stylesheet" href="estilos.css" />
+<!--link animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="spinner.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('0bU4qjecNcP2aiuNx')
+    </script>
+    <title>Carrito Barbell</title>
+</head>
+
+<body>
+ 
+ <header>
+   <div>
+      <h1 class="animate__fadeInDown">Barbell Suplementos Market</h1>
+   </div>
+             
+             
+   <!--lista superior-->
+             
+    <div class="listaSuperior">
+      <nav class="navbar navbar-expand-lg bg-transparent">
+    <div>
+
+    <div class="container-fluid ">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+         <a class="nav-link " href="-">Nosotros</a>
+          </a>
+            <li class="nav-item">
+             <a class="nav-link " href="contacto.html">Contacto</a>
+            </li>
+              </ul>
+             <form class="d-flex" role="search">
+               <input class="form-control me-3" type="search" placeholder="Buscar en Barbell" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                   </form>
+               </div>
+                </div>
+               </div>
+               </nav>
+              </div>
+  </header>    
+
+  <!--menu del medio-->
+
+<nav class="navbar navbar-expand-lg  bg-dark " >
+    <div class="container-fluid">
+     
+       <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-white" href="-">Suplementos</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-white" href="-">Accesorios</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-white" href="-">Indumentaria</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-white" href="-">Mas vendidos</a>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ 
+            
+        
+     <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#modal">
+               <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+            </a>
+         </li>
+     </ul>
+    
+    
+
+    <button id="activarFuncion" class="btn btn-secondary boton mt-2">¡Click!</button>
+
+    <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3 text-warning">Realizar Compra</h2>
+                    <form id="procesar-pago" method="POST">
+                        <div class="form-group row text-warning">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingrese su nombre" name="persona">
+                            </div>
+                        </div>
+                        <div class="form-group row text-warning">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Direccion email:</label>
+                            <div class="col-12 col-md-10">
+                            <input type="text"  id="correo" class="form-control"  name="email.id" id="email.id" placeholder="Ingrese su email">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="form-group table-responsive">
+                            <table class="table text-warning" id="lista-compra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>                                        
+                                    </tr>                                    
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-end text-warning">Total: $<p id="totalProceso"></p></th>
+                                    </tr>
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-center d-none text-warning" id="spinner">
+                            <div class="spinner">
+                                <div class="dot1"></div>
+                                <div class="dot2"></div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block btn-warning">Continuar comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                 <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra" >
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer class="text-center text-warning " >Barbell suplementos 2023. Argentina.</footer>
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</html>

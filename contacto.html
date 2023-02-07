@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+   <!--link css-->
+    <link rel="stylesheet" href="estilos.css" />
+    <!--link animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />   
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+          <h1 class="animate__fadeInDown">Barbell Suplementos</h1>
+        </div>
+     
+     
+         <!--lista superior-->
+     
+         <div class="listaSuperior">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+         <div>
+          <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link " href="-">Nosotros</a>
+                 </a>
+               <li class="nav-item">
+                 <a class="nav-link " href="pages/contacto.html">Contacto</a>
+               </li>
+             </ul>
+             <form class="d-flex" role="search">
+               <input class="form-control me-3" type="search" placeholder="Buscar en Barbell" aria-label="Search">
+               <button class="btn btn-outline-dark" type="submit">Buscar</button>
+             </form>
+           </div>
+         </div>
+       </div>
+       </nav>
+      </div>
+    
+   <!--boton ingreso de cuenta-->
+       <div class="botonIngreso">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
+         <button class="btn btn-success" type="button">Ingresar a tu cuenta</button>
+        </div>
+       </div>
+    </header>
+     
+   <!--menu del medio-->
+    
+    <nav class="navbar navbar-expand-lg  bg-dark " >
+      <div class="container-fluid">
+       
+         <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-white" href="-">Suplementos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-white" href="-">Accesorios</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-white" href="-">Indumentaria</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-white" href="-">Mas vendidos</a>
+           </ul>
+         </div>
+       </div>
+     </nav>
+
+     <main>
+
+        <section class="container mt-4" style="max-width: 400px" id="contenedor-formulario">
+
+            <div class="text-center text-white" id="titulo-formulario">      
+              <h2 class="p-3">Completa el siguiente formulario y nos contactaremos contigo</h2>  
+            </div>
+      
+      
+            <form action="" id="formulario">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email"  name="email" placeholder="Correo electronico">
+              </div>
+      
+      
+              <div class="mb-3">
+                <input type="input" class="form-control" id="nombre" name ="nombre" placeholder="Nombre">
+              </div>
+      
+      
+              <div class="mb-3">
+                <input type="tel" class="form-control" id="tel" name="telefono" placeholder="Teléfono">
+              </div>
+      
+      
+              <div class="mb-3">
+                <button type="submit" class=" btn btn-warning w-100 fs-5 mb-3">Enviar Mensaje</button>
+              </div>
+            </form>
+         
+       
+          
+      
+          </section> 
+        
+
+     </main>
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="app.js"></script>
+    
+</body>
+</html>

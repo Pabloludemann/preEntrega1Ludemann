@@ -1,0 +1,11 @@
+{
+  "name": "preentrega3ludemann",
+  "version": "1.0.0",
+  "description": "servidor prueba",
+  "main": "app.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
